@@ -96,9 +96,9 @@ export default function AdminDashboardPage() {
       {/* Main Content Body */}
       <main className="flex-1 min-w-0 p-4 sm:p-6 lg:p-10">
         {/* Top Mobile Bar */}
-        <div className="lg:hidden flex items-center justify-between bg-[#1C1714]/95 backdrop-blur-lg text-white p-4 border border-gold/20 mb-6">
+        <div className="lg:hidden flex items-center justify-between bg-white p-4 border border-light-gray mb-6">
           <button onClick={() => setSidebarOpen(true)} className="flex items-center gap-2 text-xs font-semibold uppercase">
-            <Menu className="w-5 h-5 text-charcoal" /> Menu
+            <Menu className="w-5 h-5 text-charcoal" />
           </button>
           <span className="font-semibold text-xs text-gold uppercase tracking-wider">Admin Portal</span>
         </div>
