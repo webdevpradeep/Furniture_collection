@@ -21,12 +21,14 @@ export default function CheckoutPage() {
 
   if (orderComplete) {
     return (
-      <div className="pt-32 pb-24 bg-cream min-h-screen">
-        <div className="max-w-lg mx-auto px-4 text-center">
+      <div className="flex items-center justify-center min-h-screen bg-cream">
+        <div className="bg-white bg-opacity-30 backdrop-blur-lg border border-white/20 rounded-xl p-8 max-w-lg w-full mx-auto text-center shadow-xl">
           <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-10 h-10 text-emerald-600" />
           </div>
-          <p className="text-gold text-xs uppercase tracking-[0.2em] mb-2 font-semibold">Thank You For Your Order</p>
+          <p className="text-gold text-xs uppercase tracking-[0.2em] mb-2 font-semibold">
+            Thank You For Your Order
+          </p>
           <h1 className="font-[var(--font-heading)] text-3xl sm:text-4xl text-dark-brown mb-4">
             Order #FN-84920 Confirmed
           </h1>
@@ -176,17 +178,17 @@ export default function CheckoutPage() {
 
                 <div className="space-y-3 max-h-60 overflow-y-auto pr-2">
                   {items.map(({ product, quantity }) => (
-                    <div key={product.id} className="flex items-center gap-3 py-2 border-b border-light-gray/50">
+                    <div key={product.id} className="flex flex-col items-center gap-3 py-2 border-b border-light-gray/50">
                       <img
                         src={product.images[0]}
                         alt={product.name}
-                        className="w-12 h-12 object-cover bg-cream shrink-0 border"
+                        className="w-24 h-24 object-cover bg-cream rounded-md mb-2 border"
                       />
-                      <div className="flex-1 min-w-0">
-                        <p className="text-xs font-semibold text-dark-brown truncate">{product.name}</p>
-                        <p className="text-[10px] text-medium-gray">Qty: {quantity}</p>
+                      <div className="text-center">
+                        <p className="text-sm font-semibold text-dark-brown truncate">{product.name}</p>
+                        <p className="text-xs text-medium-gray">Qty: {quantity}</p>
                       </div>
-                      <span className="text-xs font-semibold text-dark-brown">
+                      <span className="text-sm font-bold text-dark-brown mt-1">
                         ₹{(product.price * quantity).toLocaleString("en-IN")}
                       </span>
                     </div>
