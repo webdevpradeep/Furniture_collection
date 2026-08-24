@@ -4,10 +4,13 @@ import Link from "next/link";
 import { Heart, ShoppingBag, Star, Eye } from "lucide-react";
 import { Product } from "@/types";
 import { useCart } from "@/context/CartContext";
+import { useWishlist } from "@/context/WishlistContext";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addItem } = useCart();
+  const { toggleWishlist, isInWishlist } = useWishlist();
+  const isLiked = isInWishlist(product.id);
 
   return (
     <ScrollReveal animation="fade-up"><div className="group relative glass-card gold-gradient hover:scale-105 hover:shadow-xl transition-all duration-500 flex flex-col justify-between animate-fade-in-up" role="article" aria-labelledby={`product-title-${product.slug}`}>
@@ -32,10 +35,15 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Wishlist Button */}
       <button
-        className="absolute top-3 right-3 z-20 w-9 h-9 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center text-charcoal opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-gold hover:text-white shadow-md transform group-hover:scale-100 scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold"
-        aria-label="Add to wishlist"
+        onClick={() => toggleWishlist(product)}
+        className={`absolute top-3 right-3 z-20 w-9 h-9 backdrop-blur-md rounded-full flex items-center justify-center transition-all duration-300 shadow-md transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold ${
+          isLiked 
+            ? "bg-gold text-white scale-100 opacity-100" 
+            : "bg-white/90 text-charcoal opacity-0 group-hover:opacity-100 group-hover:scale-100 scale-90 hover:bg-gold hover:text-white"
+        }`}
+        aria-label={isLiked ? "Remove from wishlist" : "Add to wishlist"}
       >
-        <Heart className="w-4 h-4" />
+        <Heart className={`w-4 h-4 ${isLiked ? "fill-white" : ""}`} />
       </button>
 
       {/* Image Container with Zoom */}
