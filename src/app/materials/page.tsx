@@ -35,7 +35,19 @@ export default function MaterialsPage() {
             />
           </div>
         </div>
+        {/* Additional Materials Details */}
+        <div className="mt-12">
+          <h2 className="font-[var(--font-heading)] text-2xl text-dark-brown mb-4">Sustainable Certifications</h2>
+          <p className="text-medium-gray text-lg leading-relaxed mb-4">
+            All our wood is FSC‑certified, and we adhere to ISO 14001 environmental standards, ensuring every piece respects the planet.
+          </p>
+          <h2 className="font-[var(--font-heading)] text-2xl text-dark-brown mb-4">Metal Accents &amp; Hardware</h2>
+          <p className="text-medium-gray text-lg leading-relaxed mb-4">
+            Brass, blackened steel, and hand‑forged iron are sourced from reclaimed workshops, adding timeless character while reducing new metal extraction.
+          </p>
+        </div>
+        </div>
       </div>
-    </div>
+
   );
 }

@@ -1,7 +1,7 @@
 // src/app/checkout/CheckoutContext.tsx
 "use client";
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import { CartItem } from "@/context/CartContext"; // assuming CartItem type exists
+import { CartItem } from "@/types";
 
 type ShippingInfo = {
   firstName: string;

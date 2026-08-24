@@ -1,6 +1,7 @@
 "use client";
-
-import { useState, use } from "react";
+import { useState } from "react";
+import { useParams } from "next/navigation";
+export const dynamic = 'force-dynamic';
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -47,8 +48,8 @@ const finishColors: Record<string, string> = {
   "Natural Edge": "#8A5A36",
 };
 
-export default function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = use(params);
+export default function ProductDetailPage() {
+  const { slug } = useParams() as { slug: string };
   const product = products.find((p) => p.slug === slug);
 
   if (!product) {
