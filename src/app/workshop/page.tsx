@@ -21,7 +21,7 @@ const workshopZones = [
   {
     title: "Hand Crafting Benches",
     description: "This is where the magic happens. Our master artisans spend hours at these benches, hand-cutting dovetails, shaping curves, and fitting joints that no machine can replicate.",
-    image: "https://images.unsplash.com/photo-622396349377-ce65c697843b?q=80&w=1974&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1547609434-b732edfee020?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGFuZCUyMENyYWZ0aW5nJTIwQmVuY2hlc3xlbnwwfHwwfHx8MA%3D%3D",
     stats: "50+ Artisans · 20+ Years Average Experience",
   },
   {
@@ -127,11 +127,10 @@ export default function WorkshopPage() {
                 <button
                   key={idx}
                   onClick={() => setActiveZone(idx)}
-                  className={`px-4 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 ${
-                    activeZone === idx
-                      ? "bg-gold text-white shadow-md"
-                      : "bg-cream border border-light-gray text-dark-brown hover:border-gold"
-                  }`}
+                  className={`px-4 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 ${activeZone === idx
+                    ? "bg-gold text-white shadow-md"
+                    : "bg-cream border border-light-gray text-dark-brown hover:border-gold"
+                    }`}
                 >
                   {String(idx + 1).padStart(2, "0")}. {zone.title.split(" ").slice(0, 2).join(" ")}
                 </button>
