@@ -35,7 +35,7 @@ export default function Navbar() {
     { href: "/story", label: "Our Story" },
     { href: "/craftsmanship", label: "Craftsmanship" },
     { href: "/workshop", label: "Workshop" },
-    { href: "/shop-furniture", label: "Shop Furniture" },
+    { href: "/shop", label: "Shop Furniture" },
     { href: "/materials", label: "Materials" },
   ];
 
