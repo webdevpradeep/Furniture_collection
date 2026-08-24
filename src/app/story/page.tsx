@@ -26,7 +26,7 @@ export default function StoryPage() {
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1622396349377-ce65c697843b?q=80&w=1974&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1547609434-b732edfee020?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXJ0aXNhbiUyMGNyYWZ0aW5nJTIwZnVybml0dXJlfGVufDB8fDB8fHww"
             alt="Artisan crafting furniture"
             fill
             className="object-cover"
