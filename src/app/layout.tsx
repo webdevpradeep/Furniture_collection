@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
+import { WishlistProvider } from "@/context/WishlistContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -23,9 +24,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen flex flex-col bg-cream text-charcoal">
         <CartProvider>
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <WishlistProvider>
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </WishlistProvider>
         </CartProvider>
       </body>
     </html>
