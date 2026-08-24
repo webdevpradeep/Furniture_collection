@@ -40,7 +40,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h4 className="font-[var(--font-heading)] text-2xl text-white mb-4">
-              FurniNest<span className="text-gold">.</span>
+              Arpita&Archita<span className="text-gold">.</span>
             </h4>
             <p className="text-sm leading-relaxed text-white/50 mb-6">
               Premium furniture designed, manufactured, and handcrafted in our workshop.
@@ -132,7 +132,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-gold shrink-0" />
-                <span className="text-sm text-white/50">hello@furninest.com</span>
+                <span className="text-sm text-white/50">hello@arpita&archita.com</span>
               </li>
             </ul>
           </div>
@@ -143,7 +143,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40">
-            © 2026 FurniNest. All rights reserved. Handcrafted with pride.
+            © 2026  Arpita&Archita. All rights reserved. Handcrafted with pride.
           </p>
           <p className="text-xs text-white/40">
             Premium Furniture Manufacturer

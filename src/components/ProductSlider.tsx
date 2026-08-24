@@ -36,9 +36,8 @@ export default function ProductSlider({ products }: { products: Product[] }) {
         onClick={() => scroll("left")}
         disabled={!canScrollLeft}
         aria-label="Scroll left"
-        className={`absolute -left-4 sm:-left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/90 backdrop-blur-md border border-light-gray shadow-xl flex items-center justify-center text-dark-brown hover:bg-gold hover:text-white transition-all duration-300 ${
-          canScrollLeft ? "opacity-100 cursor-pointer" : "opacity-0 cursor-not-allowed pointer-events-none"
-        }`}
+        className={`absolute -left-2 sm:-left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/90 backdrop-blur-md border border-light-gray shadow-xl flex items-center justify-center text-dark-brown hover:bg-gold hover:text-white transition-all duration-300 ${canScrollLeft ? "opacity-100 cursor-pointer" : "opacity-0 cursor-not-allowed pointer-events-none"
+          }`}
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
@@ -47,9 +46,8 @@ export default function ProductSlider({ products }: { products: Product[] }) {
         onClick={() => scroll("right")}
         disabled={!canScrollRight}
         aria-label="Scroll right"
-        className={`absolute -right-4 sm:-right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/90 backdrop-blur-md border border-light-gray shadow-xl flex items-center justify-center text-dark-brown hover:bg-gold hover:text-white transition-all duration-300 ${
-          canScrollRight ? "opacity-100 cursor-pointer" : "opacity-0 cursor-not-allowed pointer-events-none"
-        }`}
+        className={`absolute -right-2 sm:-right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/90 backdrop-blur-md border border-light-gray shadow-xl flex items-center justify-center text-dark-brown hover:bg-gold hover:text-white transition-all duration-300 ${canScrollRight ? "opacity-100 cursor-pointer" : "opacity-0 cursor-not-allowed pointer-events-none"
+          }`}
       >
         <ChevronRight className="w-5 h-5" />
       </button>
@@ -58,7 +56,7 @@ export default function ProductSlider({ products }: { products: Product[] }) {
       <div
         ref={scrollContainerRef}
         onScroll={checkScroll}
-        className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-none scroll-smooth pb-4 px-1"
+        className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-none scroll-smooth pb-4 px-4"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {products.map((product) => (
