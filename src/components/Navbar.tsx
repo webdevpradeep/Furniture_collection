@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { ShoppingBag, Heart, Menu, X, Search, User, Hammer } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 
@@ -31,11 +32,11 @@ export default function Navbar() {
   const isTransparent = isHome && !isScrolled;
 
   const links = [
-    { href: "/#story", label: "Our Story" },
-    { href: "/#craft", label: "Craftsmanship" },
-    { href: "/#workshop", label: "Workshop" },
-    { href: "/shop", label: "Shop Furniture" },
-    { href: "/#materials", label: "Materials" },
+    { href: "/story", label: "Our Story" },
+    { href: "/craftsmanship", label: "Craftsmanship" },
+    { href: "/workshop", label: "Workshop" },
+    { href: "/shop-furniture", label: "Shop Furniture" },
+    { href: "/materials", label: "Materials" },
   ];
 
   const mobileLinks = [
@@ -60,9 +61,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Navbar */}
-      <nav
-        className={`fixed inset-x-0 top-0 sm:top-8 z-40 transition-all duration-500 bg-white/5 backdrop-blur-lg border-b border-gold/20 py-3.5 shadow-md ${isTransparent ? "bg-gradient-to-b from-black/80 via-black/40 to-transparent" : ""}`}
-      >
+      <nav className={`fixed inset-x-0 top-0 sm:top-8 z-40 transition-all duration-500 bg-black/20 backdrop-blur-lg border-b border-gold/20 py-3.5 shadow-md text-white`}>
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between">
           {/* Mobile menu toggle */}
           <button
@@ -74,12 +73,12 @@ export default function Navbar() {
           </button>
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1 group">
-            <span className="font-[var(--font-heading)] text-2xl sm:text-3xl font-semibold tracking-wider text-white group-hover:text-gold transition-colors">
-              Arpita&Archita
-            </span>
-            <span className="text-gold text-3xl leading-none">.</span>
-          </Link>
+<Link href="/" className="flex items-center gap-1 group">
+  <span className="font-[var(--font-heading)] text-2xl sm:text-3xl font-semibold tracking-wider text-white group-hover:text-gold transition-colors">
+    Arpita&Archita
+  </span>
+  <span className="text-gold text-3xl leading-none">.</span>
+</Link>
 
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center gap-8">
@@ -129,9 +128,11 @@ export default function Navbar() {
       >
         <div>
           <div className="flex items-center justify-between p-6 border-b border-white/10">
-            <span className="font-[var(--font-heading)] text-xl font-semibold text-white tracking-wider">
-              FurniNest<span className="text-gold">.</span>
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="font-[var(--font-heading)] text-xl font-semibold text-white tracking-wider">
+                Arpita&Archita<span className="text-gold">.</span>
+              </span>
+            </div>
             <button onClick={() => setMobileMenuOpen(false)} aria-label="Close menu" className="text-white/70 hover:text-gold transition-colors">
               <X className="w-6 h-6" />
             </button>
