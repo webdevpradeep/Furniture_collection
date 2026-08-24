@@ -13,7 +13,7 @@ const techniques = [
   {
     title: "Hand-Cut Dovetails",
     description: "Each dovetail joint is hand-cut by our master craftsmen, ensuring a perfect interlocking fit that showcases both strength and artistry.",
-    image: "https://images.unsplash.com/photo-1622396349377-ce65c697843b?q=80&w=1974&auto=format&fit=crop",
+    image: "https://plus.unsplash.com/premium_photo-1664300494539-313eac2a6095?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3JhZnRzbWFuc2hpcHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     title: "Steam Bending",
