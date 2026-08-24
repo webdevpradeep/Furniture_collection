@@ -5,9 +5,10 @@ import { Heart, ArrowRight } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 
+import { useWishlist } from "@/context/WishlistContext";
+
 export default function WishlistPage() {
-  // Wishlist items demonstration
-  const wishlistProducts = products.slice(0, 4);
+  const { wishlist } = useWishlist();
 
   return (
     <div className="pt-24 sm:pt-32 pb-24 bg-cream min-h-screen">
@@ -29,7 +30,7 @@ export default function WishlistPage() {
           </Link>
         </div>
 
-        {wishlistProducts.length === 0 ? (
+        {wishlist.length === 0 ? (
           <div className="bg-white p-12 text-center border border-light-gray max-w-md mx-auto">
             <Heart className="w-12 h-12 text-medium-gray mx-auto mb-4" />
             <h2 className="font-[var(--font-heading)] text-xl text-dark-brown mb-2">
@@ -47,7 +48,7 @@ export default function WishlistPage() {
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-            {wishlistProducts.map((product) => (
+            {wishlist.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
