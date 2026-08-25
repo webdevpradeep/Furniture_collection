@@ -52,7 +52,7 @@ export default function ScrollReveal({
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-800 cubic-bezier(0.16, 1, 0.3, 1) ${
+      className={`transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
         isVisible ? visibleClasses : animationClasses[animation]
       } ${className}`}
     >

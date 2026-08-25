@@ -4,6 +4,7 @@ import { CartProvider } from "@/context/CartContext";
 import { WishlistProvider } from "@/context/WishlistContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: " Arpita&Archita | Premium Furniture Manufacturer",
@@ -22,12 +23,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content=" Arpita&Archita" />
       </head>
-      <body className="min-h-screen flex flex-col bg-cream text-charcoal">
+      <body className="min-h-screen flex flex-col bg-cream text-dark-brown">
         <CartProvider>
           <WishlistProvider>
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />
+            <ScrollToTop />
           </WishlistProvider>
         </CartProvider>
       </body>
