@@ -105,6 +105,38 @@ export default function WorkshopPage() {
         </div>
       </section>
 
+      {/* ═══════════ VIDEO TOUR SECTION ═══════════ */}
+      {/* <section className="py-24 sm:py-32 bg-gradient-to-b from-cream to-white overflow-hidden">
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-10 text-center">
+          <ScrollReveal animation="fade-up">
+            <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">
+              Watch Our Process
+            </p>
+            <h2 className="font-[var(--font-heading)] text-3xl sm:text-4xl lg:text-5xl text-dark-brown mb-6">
+              Handcrafted in Motion
+            </h2>
+            <div className="w-16 h-0.5 bg-gold mx-auto mb-12" />
+          </ScrollReveal>
+
+          <ScrollReveal animation="fade-up" delay={200}>
+            <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-light-gray/60 shadow-2xl bg-charcoal">
+              <video
+                className="w-full h-full object-cover"
+                controls
+                poster="https://images.unsplash.com/photo-1547609434-b732edfee020?w=1000"
+                loop
+                muted
+                autoPlay
+                playsInline
+              >
+                <source src="https://player.vimeo.com/external/435674703.sd.mp4?s=7fdf2f22b757f12e1ec7354c55986fe7f070cb1e&profile_id=165&oauth2_token_id=57447761" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section> */}
+
       {/* ═══════════ INTERACTIVE WORKSHOP TOUR ═══════════ */}
       <section className="py-24 sm:py-32 bg-white overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
@@ -210,9 +242,9 @@ export default function WorkshopPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
               { src: "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop", alt: "Precision cutting", span: "md:col-span-2 md:row-span-2" },
-              { src: "https://images.unsplash.com/photo-1622396349377-ce65c697843b?q=80&w=1974&auto=format&fit=crop", alt: "Hand planing", span: "" },
-              { src: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop", alt: "Joinery work", span: "" },
-              { src: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop", alt: "Oil finishing", span: "" },
+              { src: "https://images.unsplash.com/photo-1698768196561-0dc7cf524996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEhhbmQlMjBwbGFuaW5nfGVufDB8fDB8fHww", alt: "Hand planing", span: "" },
+              { src: "https://plus.unsplash.com/premium_photo-1745198321114-2906eeced83d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Sm9pbmVyeSUyMHdvcmt8ZW58MHx8MHx8fDA%3D", alt: "Joinery work", span: "" },
+              { src: "https://images.unsplash.com/photo-1590529989936-f6efdf774c23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8T2lsJTIwZmluaXNoaW5nfGVufDB8fDB8fHww", alt: "Oil finishing", span: "" },
               { src: "https://plus.unsplash.com/premium_photo-1664300402327-1277aded5b2a?w=500&auto=format&fit=crop&q=60", alt: "Artisan at work", span: "md:col-span-2" },
             ].map((photo, i) => (
               <ScrollReveal key={i} animation="fade-up" delay={i * 75}>

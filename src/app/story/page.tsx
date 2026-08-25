@@ -21,7 +21,7 @@ const values = [
 
 export default function StoryPage() {
   return (
-    <div className="bg-cream">
+    <div className="bg-gradient-to-b from-white via-cream to-beige text-dark-brown">
       {/* ═══════════ HERO BANNER ═══════════ */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -52,13 +52,13 @@ export default function StoryPage() {
       </section>
 
       {/* ═══════════ FOUNDERS SECTION ═══════════ */}
-      <section className="py-24 sm:py-32 bg-white overflow-hidden">
+      <section className="py-24 sm:py-32 bg-gradient-to-br from-white via-cream to-beige overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
             <div className="lg:col-span-6">
-              <ScrollReveal animation="slide-left">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <ScrollReveal animation="fade-up" delay={0}>
                     <div className="aspect-[3/4] overflow-hidden border border-light-gray shadow-lg group">
                       <Image
                         src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop"
@@ -68,6 +68,8 @@ export default function StoryPage() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
                     </div>
+                  </ScrollReveal>
+                  <ScrollReveal animation="fade-up" delay={200}>
                     <div className="aspect-square overflow-hidden border border-light-gray shadow-lg group">
                       <Image
                         src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop"
@@ -77,8 +79,10 @@ export default function StoryPage() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
                     </div>
-                  </div>
-                  <div className="space-y-4 pt-10">
+                  </ScrollReveal>
+                </div>
+                <div className="space-y-4 pt-10">
+                  <ScrollReveal animation="fade-up" delay={100}>
                     <div className="aspect-square overflow-hidden border border-light-gray shadow-lg group">
                       <Image
                         src="https://plus.unsplash.com/premium_photo-1664300402327-1277aded5b2a?w=500&auto=format&fit=crop&q=60"
@@ -88,6 +92,8 @@ export default function StoryPage() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
                     </div>
+                  </ScrollReveal>
+                  <ScrollReveal animation="fade-up" delay={300}>
                     <div className="aspect-[3/4] overflow-hidden border border-light-gray shadow-lg group">
                       <Image
                         src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop"
@@ -97,9 +103,9 @@ export default function StoryPage() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
                     </div>
-                  </div>
+                  </ScrollReveal>
                 </div>
-              </ScrollReveal>
+              </div>
             </div>
 
             <div className="lg:col-span-6 space-y-6">
@@ -148,7 +154,7 @@ export default function StoryPage() {
       </section>
 
       {/* ═══════════ OUR VALUES ═══════════ */}
-      <section className="py-24 sm:py-32 bg-cream overflow-hidden">
+      <section className="py-24 sm:py-32 bg-gradient-to-tr from-beige via-cream to-white overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
           <ScrollReveal animation="fade-up">
             <div className="text-center mb-16">
@@ -183,7 +189,7 @@ export default function StoryPage() {
       </section>
 
       {/* ═══════════ TIMELINE ═══════════ */}
-      <section className="py-24 sm:py-32 bg-charcoal text-white overflow-hidden">
+      <section className="py-24 sm:py-32 bg-gradient-to-bl from-charcoal via-[#221F1C] to-[#0A0908] text-white overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
           <ScrollReveal animation="fade-up">
             <div className="text-center mb-20">
