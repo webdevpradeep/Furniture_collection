@@ -195,7 +195,7 @@ export default function MaterialsPage() {
               <ScrollReveal animation="slide-right">
                 <div className="relative aspect-[4/5] overflow-hidden border border-gold/30 shadow-2xl group">
                   <Image
-                    src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Polishing wood"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"

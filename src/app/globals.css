@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
-
+ 
 @theme inline {
-  --color-cream: #FAF7F2;
-  --color-dark-brown: #2C1E16;
-  --color-charcoal: #181412;
-  --color-beige: #E6D7C3;
-  --color-gold: #C5A059;
-  --color-gold-light: #DFBF7A;
-  --color-gold-dark: #A37E39;
+  --color-cream: #F4F1EB; /* Warm cashmere */
+  --color-dark-brown: #2A2421; /* Rich Espresso */
+  --color-charcoal: #1B1816; /* Obsidian */
+  --color-beige: #D9CFC1; /* Warm taupe */
+  --color-gold: #C89966; /* Warm Bronze / Copper-Gold */
+  --color-gold-light: #E2B98E;
+  --color-gold-dark: #9E6F42;
   --color-white: #FFFFFF;
-  --color-light-gray: #EAE6DF;
-  --color-medium-gray: #88827B;
+  --color-light-gray: #E3DCD2; /* Soft greige */
+  --color-medium-gray: #7A7269; /* Slate taupe */
 
-  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-heading: 'Outfit', 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
 }
 
@@ -25,36 +25,36 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--color-cream);
-  color: var(--color-charcoal);
+  color: var(--color-dark-brown);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* Luxury Utilities */
 .gold-gradient {
-  background: linear-gradient(135deg, #C5A059 0%, #DFBF7A 50%, #A37E39 100%);
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 50%, var(--color-gold-dark) 100%);
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #C5A059 0%, #DFBF7A 50%, #A37E39 100%);
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 50%, var(--color-gold-dark) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gold-border-glow {
-  box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);
+  box-shadow: 0 0 25px rgba(200, 153, 102, 0.15); /* RGB of #C89966 */
 }
 
 .glass-card {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(230, 215, 195, 0.6);
+  border: 1px solid rgba(217, 207, 193, 0.6); /* --color-beige */
 }
 
 .glass-card-dark {
-  background: rgba(28, 23, 20, 0.85);
+  background: rgba(27, 24, 22, 0.85); /* --color-charcoal */
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(197, 160, 89, 0.2);
+  border: 1px solid rgba(200, 153, 102, 0.2); /* --color-gold */
 }
 
 /* Utility Animations */
