@@ -16,6 +16,36 @@ const nextConfig: NextConfig = {
         hostname: "plus.unsplash.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "media.istockphoto.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.shopify.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.tuko.co.ke",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.e-a-a.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.livemint.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.prod.website-files.com",
+        pathname: "/**",
+      },
     ],
   },
 };
