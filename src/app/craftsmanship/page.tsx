@@ -8,7 +8,7 @@ const techniques = [
   {
     title: "Traditional Mortise & Tenon",
     description: "The strongest joint in woodworking. We cut precise mortises and tenons that lock together without nails, creating bonds that last generations.",
-    image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop",
+    image: "https://media.istockphoto.com/id/1413273234/photo/indian-carpenter-making-a-wooden-chair.jpg?s=170667a&w=0&k=20&c=DAHj7YhK6WiDswgJ5LIwGWQfX0ARxiKe2-3y1ND3VR4=",
   },
   {
     title: "Hand-Cut Dovetails",
@@ -18,7 +18,7 @@ const techniques = [
   {
     title: "Steam Bending",
     description: "Using centuries-old steam bending techniques, we shape solid wood into graceful curves without compromising the grain's natural strength.",
-    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop",
+    image: "https://images.livemint.com/img/2021/07/27/1600x900/primerchart_1627404351161_1627404356996.jpg",
   },
 ];
 
@@ -170,7 +170,7 @@ export default function CraftsmanshipPage() {
               <ScrollReveal animation="slide-left">
                 <div className="relative aspect-[4/5] overflow-hidden border border-light-gray shadow-2xl group">
                   <Image
-                    src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?q=80&w=2070&auto=format&fit=crop"
+                    src="https://images.livemint.com/img/2021/07/27/1600x900/primerchart_1627404351161_1627404356996.jpg"
                     alt="Quality inspection"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -218,7 +218,7 @@ export default function CraftsmanshipPage() {
       <section className="relative py-32 sm:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1932&auto=format&fit=crop"
+            src="https://www.e-a-a.com/wp-content/uploads/2025/02/best-wood-dining-tables.jpg"
             alt="Furniture showroom"
             fill
             className="object-cover"

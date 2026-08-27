@@ -9,13 +9,13 @@ const workshopZones = [
   {
     title: "Timber Storage & Selection",
     description: "Our climate-controlled timber room houses over 50 species of hardwood, each air-dried for 6–12 months before use. Every board is hand-inspected for grain quality, moisture content, and natural beauty.",
-    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop",
+    image: "https://images.livemint.com/img/2021/07/27/1600x900/primerchart_1627404351161_1627404356996.jpg",
     stats: "50+ Wood Species · 6-12 Months Air Dried",
   },
   {
     title: "CNC & Machine Room",
     description: "State-of-the-art CNC routers and planers handle the heavy cutting, ensuring sub-millimetre precision on every component. But this is just the starting point — true craftsmanship happens by hand.",
-    image: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?q=80&w=2070&auto=format&fit=crop",
+    image: "https://cdn.prod.website-files.com/648c888f1b1e76aef4736534/66f25ccd0251a1f405ada3e5_cncguide.webp",
     stats: "0.1mm Precision · 3-Axis CNC",
   },
   {
@@ -27,13 +27,13 @@ const workshopZones = [
   {
     title: "Assembly & Fitting Area",
     description: "Components come together in our assembly zone, where each piece is dry-fitted, adjusted, glued, and clamped with measured pressure for 24 hours to guarantee structural perfection.",
-    image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop",
+    image: "https://media.istockphoto.com/id/1413273234/photo/indian-carpenter-making-a-wooden-chair.jpg?s=170667a&w=0&k=20&c=DAHj7YhK6WiDswgJ5LIwGWQfX0ARxiKe2-3y1ND3VR4=",
     stats: "24hr Clamping · Zero-Gap Tolerance",
   },
   {
     title: "Finishing & Polish Studio",
     description: "Multi-coat finishes are applied by hand — oil, lacquer, or wax — with fine sanding between each coat. The result is a surface that glows with depth and feels impossibly smooth.",
-    image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop",
+    image: "https://cdn.tuko.co.ke/images/1120/ce3d1b879c8b48a5.jpeg?v=1",
     stats: "5-7 Finish Coats · Hand-Sanded Between Layers",
   },
   {
@@ -241,7 +241,7 @@ export default function WorkshopPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { src: "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop", alt: "Precision cutting", span: "md:col-span-2 md:row-span-2" },
+              { src: "https://images.livemint.com/img/2021/07/27/1600x900/primerchart_1627404351161_1627404356996.jpg", alt: "Precision cutting", span: "md:col-span-2 md:row-span-2" },
               { src: "https://images.unsplash.com/photo-1698768196561-0dc7cf524996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEhhbmQlMjBwbGFuaW5nfGVufDB8fDB8fHww", alt: "Hand planing", span: "" },
               { src: "https://plus.unsplash.com/premium_photo-1745198321114-2906eeced83d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Sm9pbmVyeSUyMHdvcmt8ZW58MHx8MHx8fDA%3D", alt: "Joinery work", span: "" },
               { src: "https://images.unsplash.com/photo-1590529989936-f6efdf774c23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8T2lsJTIwZmluaXNoaW5nfGVufDB8fDB8fHww", alt: "Oil finishing", span: "" },
@@ -267,7 +267,7 @@ export default function WorkshopPage() {
       <section className="relative py-32 sm:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1932&auto=format&fit=crop"
+            src="https://www.e-a-a.com/wp-content/uploads/2025/02/best-wood-dining-tables.jpg"
             alt="Showroom"
             fill
             className="object-cover"
