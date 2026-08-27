@@ -37,11 +37,11 @@ const iconMap: Record<string, React.ReactNode> = {
 
 const workshopGallery = [
   { title: "Timber Inspection", cat: "01 · Raw Material", img: "https://plus.unsplash.com/premium_photo-1664300402327-1277aded5b2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VGltYmVyJTIwSW5zcGVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D" },
-  { title: "Precision CNC Routing", cat: "02 · Cutting & Shaping", img: "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop" },
-  { title: "Artisan Hand Planing", cat: "03 · Hand Crafting", img: "https://images.unsplash.com/photo-1622396349377-ce65c697843b?q=80&w=1974&auto=format&fit=crop" },
-  { title: "Mortise Joinery Assembly", cat: "04 · Joinery & Fitting", img: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop" },
-  { title: "Multi-Coat Oil Finishing", cat: "05 · Sanding & Polish", img: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop" },
-  { title: "Final Quality Stamp", cat: "06 · Inspection", img: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?q=80&w=2070&auto=format&fit=crop" },
+  { title: "Precision CNC Routing", cat: "02 · Cutting & Shaping", img: "/images/cnc_routing.jpg" },
+  { title: "Artisan Hand Planing", cat: "03 · Hand Crafting", img: "/images/hand_planing.jpg" },
+  { title: "Mortise Joinery Assembly", cat: "04 · Joinery & Fitting", img: "/images/mortise_joinery.jpg" },
+  { title: "Multi-Coat Oil Finishing", cat: "05 · Sanding & Polish", img: "/images/oil_finishing.jpg" },
+  { title: "Final Quality Stamp", cat: "06 · Inspection", img: "/images/quality_stamp.jpg" },
 ];
 
 export default function HomePage() {
@@ -203,14 +203,14 @@ export default function HomePage() {
                 <div className="space-y-4">
                   <div className="aspect-[3/4] overflow-hidden border border-light-gray shadow-md group">
                     <img
-                      src="https://media.istockphoto.com/id/2210394724/photo/production-team-woodwork-or-people-in-carpentry-workshop-for-factory-warehouse-or.webp?a=1&b=1&s=612x612&w=0&k=20&c=aQb7TF2gVE8lvJqsMmq-KYUtCsqClXyHWa2hhvW4B4E="
+                      src="https://media.istockphoto.com/id/1317746806/photo/young-caucasian-carpenter-man-is-fixking-the-sawing-machine-in-his-own-garage-style-workshop.jpg?s=170667a&w=0&k=20&c=fTi7oCsMXKpaDasvev1SoIxQHEy2jHtma4aaHNv0b1w="
                       alt="Craftsman working"
                       className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
                     />
                   </div>
                   <div className="aspect-square overflow-hidden border border-light-gray shadow-md group">
                     <img
-                      src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop"
+                      src="https://thumbs.dreamstime.com/b/indian-worker-making-furniture-workshop-iron-blade-equipment-aviable-wood-chopping-factory-india-january-168881856.jpg"
                       alt="Joinery detail"
                       className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
                     />
@@ -222,14 +222,14 @@ export default function HomePage() {
                 <div className="space-y-4 pt-8">
                   <div className="aspect-square overflow-hidden border border-light-gray shadow-md group">
                     <img
-                      src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop"
+                      src="https://images.livemint.com/img/2021/07/27/1600x900/primerchart_1627404351161_1627404356996.jpg"
                       alt="Woodworking"
                       className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
                     />
                   </div>
                   <div className="aspect-[3/4] overflow-hidden border border-light-gray shadow-md group">
                     <img
-                      src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop"
+                      src="https://cdn.tuko.co.ke/images/1120/ce3d1b879c8b48a5.jpeg?v=1"
                       alt="Finishing process"
                       className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
                     />
@@ -414,7 +414,7 @@ export default function HomePage() {
       <section className="relative py-32 sm:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1932&auto=format&fit=crop"
+            src="https://www.e-a-a.com/wp-content/uploads/2025/02/best-wood-dining-tables.jpg"
             alt="Showroom"
             className="w-full h-full object-cover"
           />

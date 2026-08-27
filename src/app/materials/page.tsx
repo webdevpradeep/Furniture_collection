@@ -24,7 +24,7 @@ const materialList = [
     type: "Solid Hardwood",
     description: "A timeless, heavy-duty hardwood with a straight grain and a light, modern wheat tone. White Oak is highly water-resistant due to its cellular structure (tyloses), making it incredibly durable and stable.",
     benefits: ["Extremely wear-resistant", "Naturally moisture-resistant", "Modern, light aesthetic"],
-    image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop",
+    image: "https://media.istockphoto.com/id/1413273234/photo/indian-carpenter-making-a-wooden-chair.jpg?s=170667a&w=0&k=20&c=DAHj7YhK6WiDswgJ5LIwGWQfX0ARxiKe2-3y1ND3VR4=",
   },
 ];
 
