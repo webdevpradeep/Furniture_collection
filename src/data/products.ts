@@ -10,9 +10,9 @@ export const products: Product[] = [
     price: 98900,
     originalPrice: 119900,
     images: [
-      "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1932&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=2070&auto=format&fit=crop",
+      "https://www.coleccionalexandra.co.uk/wp-content/uploads/2023/09/1-coleccion-alexandra-diningchair-alex-1024x830.jpg",
+      "https://assets.wfcdn.com/im/52239542/compr-r85/2493/249371271/sofid-tufted-leather-upholstered-wing-back-parsons-chair.jpg",
+      "https://i.pinimg.com/736x/a3/9e/ab/a39eab7da5c355c042cc95afed409762.jpg",
     ],
     category: "Dining",
     material: "Solid Oak Wood",
@@ -40,8 +40,8 @@ export const products: Product[] = [
     longDescription: "The Oslo Bookshelf combines elegance with practicality. Constructed from premium walnut, its clean lines and warm tones complement any interior style. Features adjustable shelves and discreet cable routing for a clutter-free look.",
     price: 68900,
     images: [
-      "https://images.unsplash.com/photo-1594620302200-9a762244a156?q=80&w=2039&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
+      "https://images.suite101.com/wp-content/uploads/2024/04/vertical-space-utilization-for-small-living-rooms.jpg",
+      "https://i.pinimg.com/736x/47/90/59/4790599d2ec5e53d1bf68c723e5fe9d4.jpg",
     ],
     category: "Storage",
     material: "Walnut Wood",
@@ -70,8 +70,8 @@ export const products: Product[] = [
     price: 189900,
     originalPrice: 229900,
     images: [
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=2070&auto=format&fit=crop",
+      "https://www.royalzig.com/uploads/cache/cache-classical-luxury-style-handcrafted-french-sofa-set-chennai-(1).jpg",
+      "https://i.pinimg.com/736x/ee/b6/46/eeb6463a561f8b097d53af4cec176a24.jpg",
     ],
     category: "Living Room",
     material: "Full-Grain Italian Leather",
@@ -99,8 +99,8 @@ export const products: Product[] = [
     longDescription: "The Nordic Bedside Table brings Scandinavian simplicity to your bedroom. Its clean geometric form is complemented by soft-close drawer hardware and a natural wood finish.",
     price: 26500,
     images: [
-      "https://images.unsplash.com/photo-1532372576444-dda954194ad0?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
+      "https://i.pinimg.com/originals/77/1e/52/771e52d137ee1b83bb2327becc2c1917.jpg",
+      "https://i.pinimg.com/originals/3c/0e/3b/3c0e3b3500e5e32e2e2ecc5ce61575fd.jpg",
     ],
     category: "Bedroom",
     material: "Solid Ash Wood",
@@ -127,8 +127,9 @@ export const products: Product[] = [
     longDescription: "The Craftsman Desk is designed for those who demand both beauty and functionality. Its generous work surface features a hand-laid leather inlay, while hidden compartments keep cables organised.",
     price: 144900,
     images: [
+      "https://www.touchedinteriors.co.uk/cdn/shop/files/comfortable-leather-office-chair-for-professionals_1024x.png?v=1726663964",
       "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?q=80&w=2072&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
+
     ],
     category: "Office",
     material: "Cherry Wood with Leather Inlay",
@@ -155,8 +156,8 @@ export const products: Product[] = [
     longDescription: "The Grove Bench is designed to withstand the elements while aging gracefully. Built from sustainably sourced teak wood known for its natural weather resistance.",
     price: 52900,
     images: [
-      "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
+      "https://i5.walmartimages.com/asr/7ba8c442-8f5d-4c52-adda-16c262f37128_1.621fb78abeb34ae1c08ef9e9465be0d3.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff",
+      "https://tse1.mm.bing.net/th/id/OIP.NXgRzbx0K2pipgvDL50AeQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     ],
     category: "Outdoor",
     material: "Sustainable Teak",
@@ -182,8 +183,9 @@ export const products: Product[] = [
     longDescription: "The Aria Chair combines organic curves with artisanal weaving. Each chair's backrest is individually sculpted from steam-bent beech, paired with a hand-woven natural cord seat.",
     price: 34500,
     images: [
-      "https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
+      "https://m.media-amazon.com/images/I/71a9tr-WsFL._AC_SL1500_.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.MVD_kvWzaLEPGKyCG-3h3AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+
     ],
     category: "Dining",
     material: "Steam-Bent Beech",
@@ -211,8 +213,9 @@ export const products: Product[] = [
     longDescription: "The Atelier Coffee Table is a statement piece. Each live-edge walnut slab is unique, preserving the tree's natural form. Paired with a powder-coated black steel base for a striking contrast.",
     price: 76000,
     images: [
+      "https://turri.it/wp-content/uploads/2024/05/atelier-living-cover.jpg",
       "https://images.unsplash.com/photo-1532372576444-dda954194ad0?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
+
     ],
     category: "Living Room",
     material: "Live-Edge Walnut",
@@ -238,7 +241,7 @@ export const categories: Category[] = [
     id: "1",
     name: "Living Room",
     slug: "living-room",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
+    image: "https://turri.it/wp-content/uploads/2024/05/atelier-living-cover.jpg",
     description: "Sofas, coffee tables, and accent pieces crafted for comfort and style.",
     productCount: 24,
   },
@@ -325,7 +328,7 @@ export const craftSteps = [
     num: "02",
     title: "Precision Cutting",
     description: "Using state-of-the-art CNC machinery combined with the expert eye of our craftsmen, we cut components with absolute precision — ensuring perfect fits.",
-    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop",
+    image: "https://thumbs.dreamstime.com/b/precision-wood-carving-cnc-router-closeup-view-intricate-texture-detailed-cutting-process-captivating-close-up-355592968.jpg?w=1400",
   },
   {
     num: "03",
@@ -337,25 +340,25 @@ export const craftSteps = [
     num: "04",
     title: "Joinery & Assembly",
     description: "Traditional joinery techniques like mortise and tenon, dovetail, and dowel joints ensure every piece holds together with lasting strength.",
-    image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop",
+    image: "https://media.istockphoto.com/id/1413273234/photo/indian-carpenter-making-a-wooden-chair.jpg?s=170667a&w=0&k=20&c=DAHj7YhK6WiDswgJ5LIwGWQfX0ARxiKe2-3y1ND3VR4=",
   },
   {
     num: "05",
     title: "Sanding & Finishing",
     description: "Hours of hand-sanding to silky smoothness, followed by multiple coats of premium eco-friendly finishes that protect and reveal the wood's natural beauty.",
-    image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop",
+    image: "https://cdn.shopify.com/s/files/1/0600/9526/6861/files/pierre-jeanneret-easy-chair-history-wood_1024x1024.jpg?v=1708286803",
   },
   {
     num: "06",
     title: "Quality Inspection",
     description: "Every piece undergoes rigorous multi-point quality checks — from structural integrity to surface finish — before it earns the FurniNest mark.",
-    image: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?q=80&w=2070&auto=format&fit=crop",
+    image: "https://cdn.tuko.co.ke/images/1120/ce3d1b879c8b48a5.jpeg?v=1",
   },
   {
     num: "07",
     title: "Final Product",
     description: "The finished masterpiece, ready to transform your space. Each piece is carefully packaged and delivered to your door.",
-    image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1932&auto=format&fit=crop",
+    image: "https://turri.it/wp-content/uploads/2024/05/atelier-living-cover.jpg",
   },
 ];
 

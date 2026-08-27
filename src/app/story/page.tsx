@@ -61,7 +61,7 @@ export default function StoryPage() {
                   <ScrollReveal animation="fade-up" delay={0}>
                     <div className="aspect-[3/4] overflow-hidden border border-light-gray shadow-lg group">
                       <Image
-                        src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2066&auto=format&fit=crop"
+                        src="https://cdn.shopify.com/s/files/1/0600/9526/6861/files/pierre-jeanneret-easy-chair-history-wood_1024x1024.jpg?v=1708286803"
                         alt="Woodworking workshop"
                         width={400}
                         height={530}
@@ -72,7 +72,7 @@ export default function StoryPage() {
                   <ScrollReveal animation="fade-up" delay={200}>
                     <div className="aspect-square overflow-hidden border border-light-gray shadow-lg group">
                       <Image
-                        src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop"
+                        src="https://media.istockphoto.com/id/1413273234/photo/indian-carpenter-making-a-wooden-chair.jpg?s=170667a&w=0&k=20&c=DAHj7YhK6WiDswgJ5LIwGWQfX0ARxiKe2-3y1ND3VR4="
                         alt="Joinery detail"
                         width={400}
                         height={400}
@@ -96,7 +96,7 @@ export default function StoryPage() {
                   <ScrollReveal animation="fade-up" delay={300}>
                     <div className="aspect-[3/4] overflow-hidden border border-light-gray shadow-lg group">
                       <Image
-                        src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop"
+                        src="https://cdn.tuko.co.ke/images/1120/ce3d1b879c8b48a5.jpeg?v=1"
                         alt="Finishing process"
                         width={400}
                         height={530}
@@ -239,7 +239,7 @@ export default function StoryPage() {
       <section className="relative py-32 sm:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1932&auto=format&fit=crop"
+            src="https://www.e-a-a.com/wp-content/uploads/2025/02/best-wood-dining-tables.jpg"
             alt="Beautiful furniture showroom"
             fill
             className="object-cover"
