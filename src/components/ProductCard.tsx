@@ -67,26 +67,22 @@ export default function ProductCard({ product }: { product: Product }) {
           </Link>
 
           {/* Hover Action Overlay */}
-          <div className="absolute inset-0 p-3 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-between items-end gap-2">
-            {isHover && (
-              <>
+          <div className="absolute inset-0 p-3 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-100 sm:opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-between items-end gap-2">
                 <Link
                   href={`/product/${product.slug}`}
-                  className="p-2.5 bg-white/90 hover:bg-white text-charcoal text-[11px] font-bold flex items-center justify-center"
+                  className="w-9 h-9 flex items-center justify-center bg-white/90 hover:bg-white text-charcoal rounded-md"
                   aria-label="View product details"
                 >
-                  <Eye className="w-3.5 h-3.5" />
+                  <Eye className="w-5 h-5" />
                 </Link>
                 <a
                   href={`https://wa.me/1234567890?text=I am interested in ${product.name}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 flex items-center justify-center bg-white/90 hover:bg-white ml-auto"
+                  className="w-9 h-9 flex items-center justify-center bg-white/90 hover:bg-white rounded-md ml-auto"
                 >
-                  <img src="/images/whatsapp.png" alt="WhatsApp" className="w-full h-full object-cover" />
+                  <img src="/images/whatsapp.png" alt="WhatsApp" className="w-5 h-5 object-contain" />
                 </a>
-              </>
-            )}
           </div>
         </div>
 
@@ -104,7 +100,13 @@ export default function ProductCard({ product }: { product: Product }) {
               </h3>
             </Link>
             {/* Brand Logo */}
-            <img src="/images/brand-logo.png" alt="Brand logo" className="mt-2 w-12 h-12 object-contain" />
+            <div className="mt-2 flex items-center gap-1.5">
+              <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="6" fill="#2C1810"/>
+                <path d="M10 28V12h4l6 10 6-10h4v16h-4V18l-6 10-6-10v10z" fill="#C9A96E"/>
+              </svg>
+              <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-dark-brown">Muebles</span>
+            </div>
 
             {/* Rating */}
             <div className="flex items-center gap-1 mt-1.5">
