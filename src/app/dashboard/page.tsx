@@ -48,11 +48,10 @@ export default function DashboardPage() {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`w-full flex items-center gap-3 px-4 py-3 text-xs uppercase tracking-wider font-medium text-left transition-colors ${
-                      activeTab === tab.id
+                    className={`w-full flex items-center gap-3 px-4 py-3 text-xs uppercase tracking-wider font-medium text-left transition-colors ${activeTab === tab.id
                         ? "bg-gold text-white font-semibold"
                         : "text-dark-brown hover:bg-cream"
-                    }`}
+                      }`}
                   >
                     <Icon className="w-4 h-4" />
                     {tab.label}
@@ -79,11 +78,10 @@ export default function DashboardPage() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 text-xs uppercase tracking-wider font-semibold whitespace-nowrap border ${
-                    activeTab === tab.id
+                  className={`px-4 py-2 text-xs uppercase tracking-wider font-semibold whitespace-nowrap border ${activeTab === tab.id
                       ? "bg-gold text-white border-gold"
                       : "bg-white text-dark-brown border-light-gray"
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -126,7 +124,7 @@ export default function DashboardPage() {
 
                     <div className="flex items-center gap-4">
                       <img
-                        src="https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1932&auto=format&fit=crop"
+                        src="https://www.e-a-a.com/wp-content/uploads/2025/02/best-wood-dining-tables.jpg"
                         alt="Arden Dining Table"
                         className="w-16 h-16 object-cover bg-cream border"
                       />
