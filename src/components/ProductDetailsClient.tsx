@@ -109,11 +109,10 @@ export default function ProductDetailsClient({
                 <button
                   key={idx}
                   onClick={() => setSelectedImageIndex(idx)}
-                  className={`w-16 h-16 sm:w-20 sm:h-20 aspect-square overflow-hidden border-2 transition-all ${
-                    selectedImageIndex === idx
+                  className={`w-16 h-16 sm:w-20 sm:h-20 aspect-square overflow-hidden border-2 transition-all ${selectedImageIndex === idx
                       ? "border-gold shadow-md scale-105"
                       : "border-light-gray opacity-70 hover:opacity-100"
-                  }`}
+                    }`}
                 >
                   <img src={img} alt={`${product.name} detail ${idx + 1}`} className="w-full h-full object-cover" />
                 </button>
@@ -150,9 +149,8 @@ export default function ProductDetailsClient({
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star
                       key={i}
-                      className={`w-4 h-4 ${
-                        i < Math.floor(product.rating) ? "fill-gold text-gold" : "text-light-gray"
-                      }`}
+                      className={`w-4 h-4 ${i < Math.floor(product.rating) ? "fill-gold text-gold" : "text-light-gray"
+                        }`}
                     />
                   ))}
                 </div>
@@ -205,11 +203,10 @@ export default function ProductDetailsClient({
                         <button
                           key={opt}
                           onClick={() => setSelectedFinish(opt)}
-                          className={`flex items-center gap-2 px-3.5 py-2 text-xs border uppercase tracking-wider transition-all ${
-                            isSelected
+                          className={`flex items-center gap-2 px-3.5 py-2 text-xs border uppercase tracking-wider transition-all ${isSelected
                               ? "border-gold bg-dark-brown text-white font-bold shadow-md"
                               : "border-light-gray bg-white text-dark-brown hover:border-gold"
-                          }`}
+                            }`}
                         >
                           <span
                             className="w-3.5 h-3.5 rounded-full border border-black/20 shrink-0"
@@ -254,11 +251,10 @@ export default function ProductDetailsClient({
                 <button
                   onClick={() => toggleWishlist(product)}
                   aria-label={isLiked ? "Remove from wishlist" : "Add to wishlist"}
-                  className={`p-4 border shadow-sm transition-all duration-300 ${
-                    isLiked
+                  className={`p-4 border shadow-sm transition-all duration-300 ${isLiked
                       ? "border-gold bg-gold text-white"
                       : "border-light-gray bg-white text-dark-brown hover:text-gold hover:border-gold"
-                  }`}
+                    }`}
                 >
                   <Heart className={`w-5 h-5 ${isLiked ? "fill-white" : ""}`} />
                 </button>
